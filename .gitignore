@@ -1,0 +1,149 @@
+# Frontend
+## Dependencies
+frontend/node_modules/
+frontend/.pnp
+frontend/.pnp.js
+
+## Testing
+frontend/coverage/
+
+## Production
+frontend/build/
+frontend/dist/
+
+## Environment files
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+## Debug logs
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+## TypeScript
+frontend/*.tsbuildinfo
+frontend/tsconfig.tsbuildinfo
+
+## Cache
+frontend/.eslintcache
+frontend/.stylelintcache
+
+## Yarn
+frontend/.yarn/*
+!frontend/.yarn/patches
+!frontend/.yarn/plugins
+!frontend/.yarn/releases
+!frontend/.yarn/sdks
+!frontend/.yarn/versions
+frontend/.pnp.*
+
+# Backend
+## Python
+backend/__pycache__/
+backend/*/__pycache__/
+backend/*/*/__pycache__/
+backend/*/*/*/__pycache__/
+backend/*.py[cod]
+backend/*$py.class
+
+## Virtual Environment
+backend/venv/
+backend/env/
+backend/.env/
+backend/.venv/
+backend/ENV/
+backend/env.bak/
+backend/venv.bak/
+
+## Environment files
+backend/.env
+backend/.env.*
+backend/.flaskenv
+
+## Python distribution/packaging
+backend/dist/
+backend/build/
+backend/develop-eggs/
+backend/*.egg-info/
+backend/*.egg
+
+## Python testing
+backend/.pytest_cache/
+backend/.coverage
+backend/htmlcov/
+backend/.tox/
+backend/.nox/
+backend/coverage.xml
+backend/*.cover
+backend/.hypothesis/
+
+## Python Installer logs
+backend/pip-log.txt
+backend/pip-delete-this-directory.txt
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# IDE - IntelliJ/WebStorm/PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+
+# IDE - Visual Studio
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Misc
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.swp
+
+# Local development
+docker-compose.override.yml
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local 
