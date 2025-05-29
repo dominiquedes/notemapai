@@ -146,10 +146,11 @@ Instructions:
 1. Identify the main topic/concept from the text
 2. Break down the content into major subtopics
 3. For each subtopic, identify key points and supporting details
-4. Organize the information in a hierarchical structure
-5. Ensure the structure is balanced and logical
-6. Keep node names concise but descriptive
-7. Include important relationships between concepts
+4. Include subpoints that provide additional detail or examples
+5. Organize the information in a hierarchical structure
+6. Ensure the structure is balanced and logical
+7. Keep node names concise but descriptive
+8. Include important relationships between concepts
 
 The response MUST be a valid JSON object with exactly this structure:
 {
@@ -158,8 +159,19 @@ The response MUST be a valid JSON object with exactly this structure:
         {
             "name": "Subtopic 1",
             "branches": [
-                {"name": "Key Point 1.1"},
-                {"name": "Key Point 1.2"}
+                {
+                    "name": "Key Point 1.1",
+                    "subpoints": [
+                        {"name": "Detail 1.1.1"},
+                        {"name": "Detail 1.1.2"}
+                    ]
+                },
+                {
+                    "name": "Key Point 1.2",
+                    "subpoints": [
+                        {"name": "Detail 1.2.1"}
+                    ]
+                }
             ]
         }
     ]
@@ -189,6 +201,7 @@ Text to analyze:
 
         # Extract JSON from the response
         response_text = response.text
+        print(response_text)
         logger.debug(f"Raw response from Gemini API: {response_text[:200]}...")
         
         # Find the JSON part

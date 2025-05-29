@@ -1,91 +1,93 @@
-# NoteMap AI
+# NoteMap AI 🧠
 
-NoteMap AI is a web application that converts your class notes into interactive mind maps using AI. Upload your notes in PDF, DOCX, or TXT format and get a beautifully rendered mind map to help you study and understand the content better.
+NoteMap AI is an innovative mind mapping application that transforms traditional document learning into an interactive, visual experience. By leveraging artificial intelligence, it converts text documents into beautifully organized mind maps, making complex information more digestible and memorable.
 
-## Features
+## 🌟 Features
 
-- 📄 Upload notes in PDF, DOCX, or TXT format
-- 🧠 AI-powered content analysis
-- 🌳 Interactive mind map visualization
-- 📝 Click nodes to view relevant note excerpts
+- **AI-Powered Document Analysis**: Automatically converts text documents into structured mind maps
+- **Interactive Visualization**: Dynamic, draggable nodes with smooth animations and intuitive controls
+- **Real-time Collaboration**: Share and edit mind maps with team members in real-time
+- **Smart Layout**: Automatically organizes information in a visually appealing and logical structure
+- **Export & Share**: Export mind maps in various formats or share them via unique links
+- **Responsive Design**: Beautiful glass-morphic UI that works seamlessly across all devices
 
-## Prerequisites
+## 🚀 How It Makes Learning Better
 
-- Python 3.8+
-- Node.js 16+
-- Google Gemini API key
+- **Visual Learning**: Transforms linear text into visual hierarchies, making relationships between concepts clear
+- **Active Engagement**: Interactive elements encourage hands-on learning and better retention
+- **Personalization**: Customize mind maps to match your learning style and preferences
+- **Accessibility**: Makes complex information more approachable through visual organization
+- **Quick Review**: Easily revisit and review information through intuitive visual structures
 
-## Setup
+## 🛠️ Technical Stack
+
+### Frontend
+- **React**: Core framework for building the user interface
+- **TypeScript**: Type-safe development
+- **Mantine UI**: Modern component library for sleek UI elements
+- **React Flow**: Powers the interactive mind map visualization
+- **Framer Motion**: Smooth animations and transitions
 
 ### Backend
+- **FastAPI**: High-performance Python web framework
+- **PostgreSQL**: Reliable data storage
+- **Redis**: Caching and real-time features
+- **OpenAI GPT**: AI-powered document analysis and structuring
 
-1. Navigate to the backend directory:
+### Services & Tools
+- **Firebase**: Authentication and real-time database
+- **Vercel**: Frontend deployment and hosting
+- **Docker**: Containerization for consistent development and deployment
+- **GitHub Actions**: CI/CD pipeline
+
+## 🎨 Design Philosophy
+
+NoteMap AI features a modern, glass-morphic design language that emphasizes:
+- Clean, minimalist interfaces
+- Smooth animations and transitions
+- Intuitive user interactions
+- Consistent visual hierarchy
+- Accessibility and readability
+
+## 🔧 Getting Started
+
+1. Clone the repository
 ```bash
-cd backend
+git clone https://github.com/yourusername/notemap-ai.git
 ```
 
-2. Create a virtual environment and activate it:
+2. Install dependencies
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+cd frontend && npm install
+cd ../backend && pip install -r requirements.txt
 ```
 
-3. Install dependencies:
+3. Set up environment variables
 ```bash
-pip install -r requirements.txt
+cp .env.example .env
 ```
 
-4. Create a `.env` file in the backend directory:
-```
-GOOGLE_API_KEY=your_gemini_api_key_here
-```
-
-5. Start the backend server:
+4. Start the development servers
 ```bash
+# Frontend
+npm run dev
+
+# Backend
 uvicorn main:app --reload
 ```
 
-### Frontend
+## 📚 Documentation
 
-1. Navigate to the frontend directory:
-```bash
-cd frontend
-```
+For detailed documentation, API references, and guides, visit our [documentation site](https://docs.notemap.ai).
 
-2. Install dependencies:
-```bash
-npm install
-```
+## 🤝 Contributing
 
-3. Start the development server:
-```bash
-npm start
-```
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
 
-The application will be available at `http://localhost:3000`.
+## 📄 License
 
-## Usage
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-1. Open your browser and go to `http://localhost:3000`
-2. Click the upload area or drag and drop your notes file (PDF, DOCX, or TXT)
-3. Wait for the AI to process your notes
-4. Explore your interactive mind map!
+## 🙏 Acknowledgments
 
-## Technologies Used
-
-- Frontend:
-  - React
-  - TypeScript
-  - Mantine UI
-  - React Flow
-  - Axios
-
-- Backend:
-  - FastAPI
-  - PyMuPDF
-  - python-docx
-  - Google Gemini AI
-
-## License
-
-MIT 
+Special thanks to our contributors and the open-source community for making this project possible. 
