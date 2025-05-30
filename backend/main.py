@@ -29,21 +29,14 @@ logger.info("FastAPI application initialized")
 # Configure CORS with all necessary origins
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",
-        "http://localhost:3001", 
-        "http://localhost:3002",
-        "http://127.0.0.1:3000",
-        "http://127.0.0.1:3001",
-        "http://127.0.0.1:3002"
-    ],
+    allow_origins=["*"],  # Allow all origins
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
     expose_headers=["*"],
     max_age=3600,
 )
-logger.info("CORS middleware configured with all development origins")
+logger.info("CORS middleware configured to allow all origins")
 
 # Configure Gemini AI with safety settings
 GOOGLE_API_KEY = "AIzaSyBfG56Iqoi0tv_yB4LZ3rIfpDXtcc8MsOk"
